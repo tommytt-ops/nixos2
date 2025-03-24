@@ -11,5 +11,6 @@
       laptopConfig = tommy-config.nixosConfigurations.laptop;
     in {
       nixosConfigurations.myLaptopSystem = laptopConfig;
+      devShells."x86_64-linux".default = tommy-config.devShells."x86_64-linux".default;
     };
 }
