@@ -10,6 +10,7 @@
     let
       laptopConfig = baseFlake.nixosConfigurations.laptop;
       basePy311 = baseFlake.devShells."x86_64-linux".python311;
+      pkgs = nixpkgs.legacyPackages."x86_64-linux";
     in {
       nixosConfigurations.myLaptopSystem = laptopConfig;
       devShells."x86_64-linux".python311v1 = pkgs.mkShell {
