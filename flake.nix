@@ -6,9 +6,9 @@
     baseFlake.url = "github:tommytt-ops/nixos";
   };
 
-  outputs = { self, nixpkgs, tommy-config }:
+  outputs = { self, nixpkgs, baseFlake }:
     let
-      laptopConfig = tommy-config.nixosConfigurations.laptop;
+      laptopConfig = baseFlake.nixosConfigurations.laptop;
       basePy311 = baseFlake.devShells."x86_64-linux".python311;
     in {
       nixosConfigurations.myLaptopSystem = laptopConfig;
