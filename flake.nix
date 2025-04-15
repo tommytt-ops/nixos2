@@ -14,6 +14,6 @@
       nixosConfigurations.myLaptopSystem = laptopConfig;
       devShells."x86_64-linux".python311v1 = pkgs.mkShell {
         packages = basePy311.packages ++ [ pkgs.openssl ] 
-      }
+      };
     };
 }
