@@ -3,22 +3,22 @@
     "aquamarine": {
       "inputs": {
         "hyprutils": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -103,10 +103,33 @@
         "type": "github"
       }
     },
+    "baseFlake": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "hyprland": "hyprland",
+        "hyprland-plugins": "hyprland-plugins",
+        "nixpkgs": "nixpkgs_2",
+        "nixvim": "nixvim",
+        "stylix": "stylix"
+      },
+      "locked": {
+        "lastModified": 1744141341,
+        "narHash": "sha256-K/ITVBa1pZIc/Bj82KSYToSXKYoBSDXDQS/gMLlL9uQ=",
+        "owner": "tommytt-ops",
+        "repo": "nixos",
+        "rev": "fef04e1576f2857ffb486f695e5c8c9dbb77c8d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tommytt-ops",
+        "repo": "nixos",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -174,7 +197,7 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -214,7 +237,7 @@
     "flake-utils_2": {
       "inputs": {
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "stylix",
           "systems"
         ]
@@ -252,18 +275,18 @@
     "git-hooks": {
       "inputs": {
         "flake-compat": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "flake-compat"
         ],
         "gitignore": "gitignore_2",
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ],
         "nixpkgs-stable": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -285,7 +308,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "pre-commit-hooks",
           "nixpkgs"
@@ -308,7 +331,7 @@
     "gitignore_2": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "git-hooks",
           "nixpkgs"
@@ -348,7 +371,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixpkgs"
         ]
       },
@@ -369,7 +392,7 @@
     "home-manager_2": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -391,7 +414,7 @@
     "home-manager_3": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "stylix",
           "nixpkgs"
         ]
@@ -413,17 +436,17 @@
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprlang"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -450,7 +473,7 @@
         "hyprlang": "hyprlang",
         "hyprutils": "hyprutils",
         "hyprwayland-scanner": "hyprwayland-scanner",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks",
         "systems": "systems",
         "xdph": "xdph"
@@ -472,17 +495,17 @@
     "hyprland-plugins": {
       "inputs": {
         "hyprland": [
-          "tommy-config",
+          "baseFlake",
           "hyprland"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland-plugins",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland-plugins",
           "hyprland",
           "systems"
@@ -505,12 +528,12 @@
     "hyprland-protocols": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -532,17 +555,17 @@
     "hyprlang": {
       "inputs": {
         "hyprutils": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprutils"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -564,12 +587,12 @@
     "hyprutils": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -591,12 +614,12 @@
     "hyprwayland-scanner": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
@@ -618,13 +641,13 @@
     "ixx": {
       "inputs": {
         "flake-utils": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nuschtosSearch",
           "flake-utils"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nuschtosSearch",
           "nixpkgs"
@@ -648,7 +671,7 @@
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -669,15 +692,15 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1742669843,
-        "narHash": "sha256-G5n+FOXLXcRx+3hCJ6Rt6ZQyF1zqQ0DL0sWAMn2Nk0w=",
-        "owner": "nixos",
+        "lastModified": 1731676054,
+        "narHash": "sha256-OZiZ3m8SCMfh3B6bfGC/Bm4x3qc1m2SVEAlkV6iY7Yg=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "1e5b653dff12029333a6546c11e108ede13052eb",
+        "rev": "5e4fbfb6b3de1aa2872b76d49fafc942626e2add",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
+        "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
@@ -701,22 +724,6 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1731676054,
-        "narHash": "sha256-OZiZ3m8SCMfh3B6bfGC/Bm4x3qc1m2SVEAlkV6iY7Yg=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "5e4fbfb6b3de1aa2872b76d49fafc942626e2add",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
         "lastModified": 1732014248,
         "narHash": "sha256-y/MEyuJ5oBWrWAic/14LaIr/u5E0wRVzyYsouYY3W6w=",
         "owner": "nixos",
@@ -731,7 +738,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1731531548,
         "narHash": "sha256-sz8/v17enkYmfpgeeuyzniGJU0QQBfmAjlemAUYhfy8=",
@@ -747,6 +754,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1742669843,
+        "narHash": "sha256-G5n+FOXLXcRx+3hCJ6Rt6ZQyF1zqQ0DL0sWAMn2Nk0w=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1e5b653dff12029333a6546c11e108ede13052eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixvim": {
       "inputs": {
         "devshell": "devshell",
@@ -756,7 +779,7 @@
         "home-manager": "home-manager_2",
         "nix-darwin": "nix-darwin",
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixpkgs"
         ],
         "nuschtosSearch": "nuschtosSearch",
@@ -781,7 +804,7 @@
         "flake-utils": "flake-utils",
         "ixx": "ixx",
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -805,7 +828,7 @@
         "flake-compat": "flake-compat",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
@@ -827,8 +850,8 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
-        "tommy-config": "tommy-config"
+        "baseFlake": "baseFlake",
+        "nixpkgs": "nixpkgs_4"
       }
     },
     "stylix": {
@@ -841,7 +864,7 @@
         "flake-utils": "flake-utils_2",
         "gnome-shell": "gnome-shell",
         "home-manager": "home-manager_3",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_3",
         "systems": "systems_3",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
@@ -956,33 +979,10 @@
         "type": "github"
       }
     },
-    "tommy-config": {
-      "inputs": {
-        "home-manager": "home-manager",
-        "hyprland": "hyprland",
-        "hyprland-plugins": "hyprland-plugins",
-        "nixpkgs": "nixpkgs_3",
-        "nixvim": "nixvim",
-        "stylix": "stylix"
-      },
-      "locked": {
-        "lastModified": 1742835024,
-        "narHash": "sha256-VNXgi4Nn5vb3j9dO9K9Cz+FLPxigB5LVogvtqYurvHw=",
-        "owner": "tommytt-ops",
-        "repo": "nixos",
-        "rev": "e9b795001a5a57619187d25f9d786dad7a24ffc3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tommytt-ops",
-        "repo": "nixos",
-        "type": "github"
-      }
-    },
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "nixvim",
           "nixpkgs"
         ]
@@ -1004,32 +1004,32 @@
     "xdph": {
       "inputs": {
         "hyprland-protocols": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprland-protocols"
         ],
         "hyprlang": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprlang"
         ],
         "hyprutils": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "tommy-config",
+          "baseFlake",
           "hyprland",
           "systems"
         ]
