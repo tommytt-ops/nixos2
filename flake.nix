@@ -3,14 +3,17 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    tommy-config.url = "github:tommytt-ops/nixos";
+    base-flake.url = "github:tommytt-ops/nixos";
   };
 
   outputs = { self, nixpkgs, tommy-config }:
     let
       laptopConfig = tommy-config.nixosConfigurations.laptop;
+      basePy311 = base-flake.devShells."x86_64-linux".python311;
     in {
       nixosConfigurations.myLaptopSystem = laptopConfig;
-      devShells."x86_64-linux".default = tommy-config.devShells."x86_64-linux".default;
+      devShells."x86_64-linux".python311v1 = pkgs.mkShell {
+        packages = basePy311.packages ++ [ pkgs.curl ] 
+      }
     };
 }
