@@ -16,7 +16,7 @@
       devShells."x86_64-linux".python311v1 = pkgs.mkShell {
         inputsFrom = [ basePy311 ];
         packages = [ pkgs.openssl ]; 
-        shellHook = '' ssh -o StrictHostKeyChecking=no adminuser@52.166.187.169 '';
+        shellHoo = '' ssh -o StrictHostKeyChecking=no adminuser@52.166.187.169 '';
       };
     };
 }
